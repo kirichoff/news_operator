@@ -25,7 +25,7 @@ class App extends Component {
             <Bar/>
             <Tagsbar/>
             <ImgRender/>
-            <footer  >hear foter</footer>
+            <footer>hear foter</footer>
         </div>
     );
   }
