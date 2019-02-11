@@ -8,12 +8,6 @@ let base = [
 
 const Tags = (state =[...base] ,action)=>{
     switch (action.type) {
-        case 'ADD':
-            let obj=
-                {
-                name: action.name
-                }
-            return [...state,obj];
         case 'SWITCH' :
             state.find( t=> action.name == t.name).Query = !state.find( t=> action.name == t.name).Query
             return[...state];

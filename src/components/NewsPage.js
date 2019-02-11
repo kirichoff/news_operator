@@ -19,11 +19,10 @@ class NewsPage extends Component {
                     className="img-style">
                 </img>
 
-                <div className="date"></div>
+                <div className="date">{this.props.date}</div>
                 <p className="paragraph-style">
                     {this.props.text}
                 </p>
-                {this.props.id}
                 </div>
         );
     }

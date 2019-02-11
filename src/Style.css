@@ -70,10 +70,13 @@ p{
     padding-right: 20%;
 }
 .Post-page{
-
+    display:grid;
+    grid-template-columns: 1fr;
     position: center;
     margin-left: 30vmin;
-    justify-content: center;
+
+
+   justify-content: center;
 }
 
 footer{
@@ -87,11 +90,21 @@ footer{
     text-align: center;
 }
 
+.submite{
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    position: center;
+    padding: 2vmin;
+    margin-left: 50%;
+    background-color: white;
+    border-radius: 10px;
+}
+
 .tag{
     font-family: "Roboto Condensed";
     color: #212121;
     margin: 1vw;
-    font-size: 3vh;
+    font-size: 3vmin;
 }
 .tag-bar{
     justify-content: center;
@@ -106,7 +119,10 @@ footer{
 .point-style{
     border:  1px solid rgba(0, 0, 0, 0.27);
     border-radius: 10px;
-    padding: 4px;
+    padding: 10px;
+    height: 2vmin;
+    margin-left: 30%;
+    width: 30vmin;
 }
 .test-class{
     display: grid;
@@ -118,9 +134,12 @@ footer{
     grid-row-gap: 1.2%;
 }
 
-@media screen and (max-device-width: 500px ) {
+@media screen and (max-width: 600px ) {
     .test-class{ grid-template-columns: 1fr;
         grid-row-gap: 0.3%;
     }
 
+    .point {
+        margin: 3vmin;
+    }
 }

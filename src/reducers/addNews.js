@@ -35,6 +35,8 @@ const addNews = (state =[...base] ,action)=>{
             obj.id = action.id;
             obj.src = action.src;
             obj.header = action.header;
+            obj.tag = action.tags;
+            obj.date = action.date
             return [...state,obj];
         default:
             return [...state]

@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
+import Bar from "./Bar";
 
 class Login extends Component {
     render() {
         return (
             <div>
+                <Bar/>
                 <form action="">
                     <input type="email"/>
                     <input type="password"/>

@@ -18,19 +18,18 @@ class Tag extends Component {
 
     onclick = ()=>
         {
-            console.log(this.props.base.Tags.find( t=> this.props.name == t.name))
-            this.props.dispatch(swit(this.props.name))
-            if ( this.props.base.Tags.find( t=> this.props.name == t.name).Query == false )
+            this.props.onclick(this.props.name.name)
+            if (!this.props.name.Query)
             {
                 this.setState({color:this.state.black})
             }
             else
-                {
-                    this.setState({color:this.state.green})
-                }
+            {
+                this.setState({color:this.state.green})
+            }
         }
     render() {
-        if ( this.props.base.Tags.find( t=> this.props.name == t.name).Query==false )
+        if (!this.props.name.Query)
         {
             this.state.color = "#212121"
         }
@@ -42,7 +41,7 @@ class Tag extends Component {
 
                 <span style={{color: this.state.color}} onClick={this.onclick}
                       className={"tag"}>
-                    #{this.props.name}
+                    #{this.props.name.name}
                     </span>
         );
     }

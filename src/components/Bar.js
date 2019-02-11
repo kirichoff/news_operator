@@ -7,8 +7,7 @@ class Bar extends Component {
         return (
             <div>
                 <div className={"Bar"}>
-                    <span className={'point'} >News!</span>
-                    <Link className={'point'} to={'/'} >Home</Link>
+                    <Link className={'point'} to={'/'} >News</Link>
                     <Link className={'point'} to={'/About'} >About</Link>
                     <Link className={'point'} to={'/You'} >You</Link>
                     <Link className={'point'} to={'/Post'} >Post</Link>

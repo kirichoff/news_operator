@@ -29,7 +29,9 @@ class ImgRender extends Component {
                 key={i}
                 src={arr[i].src}
                 text={arr[i].header}
-                id = {arr[i].id}/>)
+                id = {arr[i].id}
+                date = {arr[i].date}
+                />)
         }
         console.log(this.props.base.addNews)
         console.log(ittem);
@@ -74,6 +76,9 @@ render = ()=> {
    buf = this.state.sorted[this.state.sorted.length-1]
     console.log(this.state)
     console.log(buf)
+    if(buf == undefined){
+        buf ={}
+    }
         return (
             <div>
                 <News
@@ -81,7 +86,9 @@ render = ()=> {
                     key={buf}
                     src={buf.src}
                     text={buf.header}
-                    id = {buf.id}/>
+                    id = {buf.id}
+                    date = {buf.date}
+                />
                 {
                                 this.rand(this.state.sorted)
                 }
