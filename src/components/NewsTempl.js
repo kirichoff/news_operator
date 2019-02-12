@@ -9,7 +9,9 @@ const NewsTempl = ({qw}) =>{
     text ={qw.text}
     id = {qw.id}
     header={qw.header}
-    img ={qw.src} />
+    img ={qw.src}
+    date = {qw.date}
+    />
     );
 }
 function mapStateToProps(state,ownProps) {

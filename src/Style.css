@@ -79,6 +79,13 @@ p{
    justify-content: center;
 }
 
+.date{
+    height: 100px;
+    width: 100px;
+    background-color: #61dafb;
+}
+
+
 footer{
     margin-top: 30vh;
     background-color: rgb(45, 44, 44);
@@ -133,6 +140,8 @@ footer{
     grid-column-gap: 1.2%;
     grid-row-gap: 1.2%;
 }
+
+
 
 @media screen and (max-width: 600px ) {
     .test-class{ grid-template-columns: 1fr;
