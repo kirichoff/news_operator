@@ -1,6 +1,7 @@
 .ImageBox
 {
-    border-radius: 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
     background-size: cover;
     transition: all ease-in-out 100ms;
     z-index: 2;

@@ -92,6 +92,7 @@ render = ()=> {
                 {
                                 this.rand(this.state.sorted)
                 }
+
             </div>
         );
     }

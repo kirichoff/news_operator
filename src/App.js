@@ -24,7 +24,10 @@ class App extends Component {
         <div>
             <Bar/>
             <Tagsbar/>
+
+        <div className={"Img"}>
             <ImgRender/>
+            </div>
             <footer>hear foter</footer>
         </div>
     );
