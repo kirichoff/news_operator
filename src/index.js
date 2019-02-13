@@ -18,6 +18,7 @@ import About from "./components/About";
 import You from "./components/You";
 import Post from "./components/Post";
 import PostPage from "./components/PostPage";
+import RichEditor from "./containers/RichEditor";
 const history = syncHistoryWithStore(browserHistory, store)
 
 ReactDOM.render(
@@ -29,6 +30,7 @@ ReactDOM.render(
                 <Route path="/You" component={You}> </Route>
                 <Route path="/Post" component={PostPage}> </Route>
                 <Route path={"/news/:id"} component={NewsTempl} />
+                <Route path={"/test"} component={RichEditor} />
             </Router>
     </Provider>
     , document.getElementById('root'));

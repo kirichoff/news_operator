@@ -7,6 +7,7 @@ import Bar from "./Bar";
 import  {connect} from 'react-redux'
 import {add} from "../actions";
 import TagPiker from "./TagPiker";
+import RichEditor from "../containers/RichEditor";
 class PostPage extends Component {
     constructor(){
         super()
@@ -100,7 +101,7 @@ imginsert=(e)=>{
                                          <input className={"submite"} type={"submit"} value={"send"}/>
                      </div>
                 </form>
-
+                <RichEditor/>
             </div>
         );
     }
