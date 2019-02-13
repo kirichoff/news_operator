@@ -13,6 +13,7 @@ base = [...base,{
     src: '../night.jpg',
     header: "Hellow"+i,
     tag:['valera','spin','gay'],
+    date: "12.10.2025 on 19:33",
     onClick: cl
 }];
 }
@@ -23,6 +24,7 @@ base = [...base, {
     src: '../night.jpg',
     header: "Hellow" + 12,
     tag: [''],
+    date: "12.10.2025 on 19:33",
     onClick: cl
 }];
 

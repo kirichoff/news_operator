@@ -26,8 +26,9 @@ class News extends Component {
                         >
                             {this.props.text}
                             </Link>
+                        <div style={{marginTop: "1.3vh",color: "#B6C8AF"}} >{this.props.date}</div>
                     </span>
-                    <span>{this.props.date}</span>
+
                     </div>
         );
     }

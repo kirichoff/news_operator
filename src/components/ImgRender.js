@@ -21,6 +21,8 @@ class ImgRender extends Component {
 
     rand=(arr)=>{
         let ittem=[];
+        console.log("peredan")
+        console.log(arr)
         for (let i=arr.length-2;i>=0;i--) {
             console.log("her array")
             console.log(arr[i].src)
@@ -43,7 +45,9 @@ class ImgRender extends Component {
 filt =(state,action)=>{
     let filted = [] ;
     let isall = false
+    console.log(state)
     console.log("action")
+    console.log(state)
     console.log(action)
     action.map(t => {
             if (t.Query===true && t.name === "All") isall = true}
